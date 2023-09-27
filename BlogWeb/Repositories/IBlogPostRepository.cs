@@ -4,7 +4,7 @@ namespace Blog.Web.Repositories
 {
     public interface IBlogPostRepository
     {
-        Task<IEnumerable<BlogPost>> GetAll();
+        Task<IEnumerable<BlogPost>> GetAllAsync();
 
         Task<BlogPost?> GetAsync(Guid id);
 
